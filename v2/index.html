@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="en" data-variant="v2">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Metra Group — Technology, carried further. (v2)</title>
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="description" content="Metra Group — the MENA region's fastest-growing IT value-added distributor since 1982. Concept preview." />
+    <link rel="icon" href="/metra-demo/brand/favicon.svg" type="image/svg+xml" />
+    <script type="module" crossorigin src="/metra-demo/assets/main-xRiK5ArF.js"></script>
+    <link rel="stylesheet" crossorigin href="/metra-demo/assets/main-DgvbBS6j.css">
+  </head>
+  <body>
+    <!-- Preloader -->
+    <div class="loader" id="loader" aria-hidden="true">
+      <div class="loader__inner">
+        <div class="loader__stage">
+          <canvas id="loaderCanvas"></canvas>
+          <span class="logo-mask loader__logo" id="loaderLogo"></span>
+        </div>
+        <div class="loader__bar"><span id="loaderBar"></span></div>
+        <div class="loader__meta mono"><span>Tuning the signal</span><span id="loaderCount">000</span></div>
+      </div>
+    </div>
+
+    <canvas id="wave" class="webgl" aria-hidden="true"></canvas>
+    <div class="globe-labels" id="globeLabels" aria-hidden="true"></div>
+    <div class="grain" aria-hidden="true"></div>
+
+    <div class="cursor" aria-hidden="true"><div class="cursor__ring"><span class="cursor__label"></span></div><div class="cursor__dot"></div></div>
+
+    <header class="nav" id="nav">
+      <a href="#top" class="nav__logo" aria-label="Metra Group home"><span class="logo-mask" id="navLogo"></span></a>
+      <nav class="nav__links" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#solutions">Solutions</a>
+        <a href="#footprint">Footprint</a>
+        <a href="#vendors">Vendors</a>
+        <a href="#partners">Partners</a>
+      </nav>
+      <a href="#contact" class="btn btn--sm magnetic" data-cursor="Join"><span>Become a partner</span></a>
+    </header>
+
+    <main id="top">
+      <!-- 01 HERO -->
+      <section class="hero" id="hero">
+        <div class="container hero__content">
+          <p class="eyebrow mono reveal-up">IT value-added distribution <i></i> MENA <i></i> Since 1982</p>
+          <h1 class="hero__title">
+            <span class="line"><span>Technology,</span></span>
+            <span class="line"><span>carried <em class="grad">further.</em></span></span>
+          </h1>
+          <p class="hero__sub reveal-up">
+            The region's fastest-growing IT value-added distributor — connecting 30+ of the world's leading vendors with
+            6,500 partners across 11 markets. Integrated solutions for future possibilities.
+          </p>
+          <div class="hero__ctas reveal-up">
+            <a href="#contact" class="btn btn--solid magnetic" data-cursor="Join"><span>Become a partner</span><b class="btn__arrow">→</b></a>
+            <a href="#solutions" class="btn magnetic" data-cursor="Explore"><span>Explore solutions</span></a>
+          </div>
+        </div>
+        <div class="lens" id="lens" aria-hidden="true">
+          <canvas class="lens__caustic"></canvas>
+          <canvas class="lens__gl"></canvas>
+          <span class="lens__label lens__label--in mono"><b>30+</b> vendors in</span>
+          <span class="lens__label lens__label--out mono"><b>6,500</b> partners out</span>
+        </div>
+        <div class="hero__scroll mono"><span class="hero__scroll-line"></span>Scroll to see more</div>
+      </section>
+
+      <!-- 02 PROOF -->
+      <section class="proof" id="about">
+        <div class="container">
+          <div class="section-head">
+            <p class="eyebrow mono"><span class="idx">01</span> — Proof</p>
+            <h2 class="h2 split">Four decades of signal.</h2>
+          </div>
+          <div class="stats">
+            <div class="stat"><div class="stat__num"><span data-count="1982" data-plain>1982</span></div><p class="stat__label mono">Founded</p></div>
+            <div class="stat"><div class="stat__num"><span data-count="11">11</span><sup>+</sup></div><p class="stat__label mono">Countries</p></div>
+            <div class="stat"><div class="stat__num"><span data-count="1500">1,500</span><sup>+</sup></div><p class="stat__label mono">Clients</p></div>
+            <div class="stat"><div class="stat__num"><span data-count="500">500</span></div><p class="stat__label mono">People across the Middle East</p></div>
+            <div class="stat"><div class="stat__num"><span data-count="6500">6,500</span></div><p class="stat__label mono">SIs, VARs, ISVs &amp; SMB resellers</p></div>
+            <div class="stat"><div class="stat__num"><span data-count="30">30</span><sup>+</sup></div><p class="stat__label mono">Global vendors</p></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 03 MANIFESTO -->
+      <section class="manifesto">
+        <div class="container">
+          <p class="eyebrow mono"><span class="idx">02</span> — Who we are</p>
+          <p class="manifesto__text" id="manifesto">
+            Metra Group is where the world's technology meets the region's ambition. We bring the brands that build the
+            digital economy to the partners who deliver it — adding value at every step, from desktop to data center.
+          </p>
+          <ul class="values mono">
+            <li>Customer-centricity</li>
+            <li>Innovation</li>
+            <li>Integrity</li>
+            <li>Win-win partnership</li>
+            <li>Continuous learning</li>
+            <li>Excellence</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- 04 CHANNEL -->
+      <section class="channel" id="channel">
+        <div class="container">
+          <div class="section-head section-head--split">
+            <div>
+              <p class="eyebrow mono"><span class="idx">03</span> — How we work</p>
+              <h2 class="h2 split">One channel.<br />Every direction.</h2>
+            </div>
+            <p class="lead">
+              Vendors get reach, enablement and market development. Partners get stock, pre-sales expertise, training and
+              support. Metra sits in the middle — and makes both sides bigger. Select a vendor or partner to trace its path.
+            </p>
+          </div>
+          <div class="channel__diagram" id="channelDiagram">
+            <svg class="ch-svg" aria-hidden="true">
+              <defs>
+                <linearGradient id="flowGrad" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="1200" y2="0">
+                  <stop offset="0" stop-color="#436D9C" />
+                  <stop offset="0.5" stop-color="#51ADC2" />
+                  <stop offset="1" stop-color="#40BB97" />
+                </linearGradient>
+              </defs>
+              <g id="channelPaths"></g>
+            </svg>
+            <div class="ch-layout">
+              <div class="ch-col ch-col--vendors">
+                <p class="ch-label mono">Vendors</p>
+                <ul class="ch-list" id="chVendors" aria-label="Vendors"></ul>
+              </div>
+              <div class="ch-center">
+                <p class="ch-label mono">Value added</p>
+                <div class="ch-hub">
+                  <span class="ch-hub__ring"></span><span class="ch-hub__ring"></span>
+                  <span class="logo-mask ch-hub__logo" role="img" aria-label="Metra"></span>
+                </div>
+              </div>
+              <div class="ch-col ch-col--partners">
+                <p class="ch-label mono">Partners</p>
+                <ul class="ch-list" id="chPartners" aria-label="Partners"></ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 05 SOLUTIONS -->
+      <section class="solutions" id="solutions">
+        <div class="container">
+          <div class="section-head section-head--split">
+            <div>
+              <p class="eyebrow mono"><span class="idx">04</span> — Solutions &amp; technologies</p>
+              <h2 class="h2 split">Twelve ways in.</h2>
+            </div>
+            <p class="lead">From the edge device to the data center, from the firewall to the storefront — one partner for every layer of the stack.</p>
+          </div>
+          <div class="grid12" id="solutionsGrid"></div>
+        </div>
+      </section>
+
+      <!-- 06 FOOTPRINT (sticky, globe morph) -->
+      <section class="footprint" id="footprint">
+        <div class="footprint__sticky">
+          <div class="container footprint__inner">
+            <div class="footprint__copy">
+              <p class="eyebrow mono"><span class="idx">05</span> — Regional footprint</p>
+              <h2 class="h2">Signal across<br /><em class="grad">eleven markets.</em></h2>
+              <p class="lead">
+                Headquartered in Dubai's Business Bay, with a strong and growing presence in the UAE, KSA and Egypt — and
+                a value chain that reaches across the Gulf, the Levant and beyond.
+              </p>
+              <div class="globe-card" id="globeCard">
+                <canvas aria-label="Globe showing Metra's markets"></canvas>
+                <div class="globe-card__labels" aria-hidden="true"></div>
+                <p class="globe-card__hint mono" aria-hidden="true"><span>⟵</span> Drag to explore <span>⟶</span></p>
+              </div>
+              <ul class="countries mono" id="countryList">
+                <li data-key="uae"><span>UAE</span><small>HQ · Dubai</small></li>
+                <li data-key="ksa"><span>Saudi Arabia</span><small>Since 1991</small></li>
+                <li data-key="egypt"><span>Egypt</span><small>Core market</small></li>
+                <li data-key="kuwait"><span>Kuwait</span></li>
+                <li data-key="qatar"><span>Qatar</span></li>
+                <li data-key="bahrain"><span>Bahrain</span></li>
+                <li data-key="iraq"><span>Iraq</span></li>
+                <li data-key="jordan"><span>Jordan</span></li>
+                <li data-key="lebanon"><span>Lebanon</span></li>
+                <li data-key="usa"><span>USA</span><small>Since 1993</small></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 07 VENDORS -->
+      <section class="vendors" id="vendors">
+        <div class="container">
+          <div class="section-head section-head--split">
+            <div>
+              <p class="eyebrow mono"><span class="idx">06</span> — Vendor partners</p>
+              <h2 class="h2 split">The names behind<br />the names.</h2>
+            </div>
+            <p class="lead">Thirty-plus global technology leaders trust Metra to take them to market across the region.</p>
+          </div>
+        </div>
+        <div class="marquee" data-dir="1">
+          <div class="marquee__track">
+            <span>Dell Technologies</span><span>HP</span><span>Intel</span><span>Samsung</span><span>Acer</span><span>ASUS</span><span>Oracle</span><span>VMware</span>
+          </div>
+        </div>
+        <div class="marquee marquee--alt" data-dir="-1">
+          <div class="marquee__track">
+            <span>Aruba</span><span>Seagate</span><span>Hikvision</span><span>APC</span><span>Canon</span><span>Micron</span><span>Zyxel</span><span>Gigabyte</span><span>AORUS</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- 08 TIMELINE (sticky horizontal) -->
+      <section class="timeline" id="timeline">
+        <div class="timeline__sticky">
+          <div class="container timeline__head">
+            <p class="eyebrow mono"><span class="idx">07</span> — History</p>
+            <h2 class="h2">From 1982 to the cloud.</h2>
+          </div>
+          <div class="timeline__rail"><span id="timelineProgress"></span></div>
+          <div class="timeline__track" id="timelineTrack">
+            <article class="milestone"><p class="milestone__year">1982</p><h3>Foundation</h3><p>Metra Group is established — and begins four decades of bringing technology to the region.</p></article>
+            <article class="milestone"><p class="milestone__year">1991</p><h3>Into Saudi Arabia</h3><p>The international journey begins with the Saudi market: vertical and horizontal expansion.</p></article>
+            <article class="milestone"><p class="milestone__year">1993</p><h3>United States</h3><p>A presence in the USA brings Metra closer to the vendors shaping the industry.</p></article>
+            <article class="milestone"><p class="milestone__year">1998</p><h3>Dubai</h3><p>The move to Dubai — today home to the group's headquarters in Business Bay.</p></article>
+            <article class="milestone"><p class="milestone__year">2002</p><h3>Distribution at scale</h3><p>Distribution, support and market development — alongside Acer, Dell, HP, IBM and Intel — reaching Qatar, Bahrain, Jordan, Kuwait and Iraq.</p></article>
+            <article class="milestone"><p class="milestone__year">2015</p><h3>Value-added distribution</h3><p>Promoting cloud from desktop to data center, with alliances including Cisco, Oracle and Zyxel.</p></article>
+            <article class="milestone milestone--now"><p class="milestone__year">Today</p><h3>The fifth decade</h3><p>New vendors, new markets — and a growing e-commerce reach through the Bizzmo platform.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <!-- 09 PARTNERS -->
+      <section class="partners" id="partners">
+        <div class="container">
+          <div class="section-head section-head--split">
+            <div>
+              <p class="eyebrow mono"><span class="idx">08</span> — Partner success</p>
+              <h2 class="h2 split">Built around<br />the partner.</h2>
+            </div>
+            <p class="lead">6,500 system integrators, resellers and ISVs grow with Metra. A few of the ways we make that happen.</p>
+          </div>
+          <div class="cards">
+            <article class="card tilt" data-cursor="Read"><span class="card__idx mono">A</span><h3>Partner training &amp; onboarding</h3><p>Structured enablement that turns new resellers into productive, certified partners — fast.</p><span class="card__line"></span></article>
+            <article class="card tilt" data-cursor="Read"><span class="card__idx mono">B</span><h3>Timely, flawless fulfillment</h3><p>Regional logistics and stock depth that keep projects on schedule and customers confident.</p><span class="card__line"></span></article>
+            <article class="card tilt" data-cursor="Read"><span class="card__idx mono">C</span><h3>Enabling SMB partners</h3><p>Programs, tools and pricing designed to help smaller partners win bigger deals.</p><span class="card__line"></span></article>
+            <article class="card tilt" data-cursor="Read"><span class="card__idx mono">D</span><h3>Driving turnkey solutions</h3><p>Pre-sales architects who combine vendors into complete, ready-to-deploy solutions.</p><span class="card__line"></span></article>
+          </div>
+        </div>
+      </section>
+
+      <!-- 10 CTA -->
+      <section class="cta" id="contact">
+        <div class="container cta__inner">
+          <p class="eyebrow mono"><span class="idx">09</span> — Let's talk</p>
+          <h2 class="cta__title split">Let's carry it <em class="grad">further.</em></h2>
+          <div class="hero__ctas">
+            <a href="mailto:support@metragroup.com" class="btn btn--solid btn--lg magnetic" data-cursor="Write"><span>Become a reseller</span><b class="btn__arrow">→</b></a>
+            <a href="tel:+97143170800" class="btn btn--lg magnetic" data-cursor="Call"><span>Talk to our team</span></a>
+          </div>
+          <div class="contact mono">
+            <div><small>Headquarters</small><p>The Binary by Omniyat, Office 1201<br />Marasi Drive, Business Bay, Dubai</p></div>
+            <div><small>Telephone</small><p><a href="tel:+97143170800">+971 4 317 0800</a></p></div>
+            <div><small>Email</small><p><a href="mailto:support@metragroup.com">support@metragroup.com</a></p></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <span class="logo-mask footer__logo" role="img" aria-label="Metra"></span>
+        <nav class="footer__links mono">
+          <a href="#about">About</a><a href="#solutions">Solutions</a><a href="#vendors">Vendors</a><a href="#partners">Partners</a><a href="#contact">Contact</a>
+          <a href="https://www.linkedin.com/company/metragroup" target="_blank" rel="noopener">LinkedIn</a>
+        </nav>
+        <p class="footer__note mono">© 1982–2026 Metra Computer Group FZCO</p>
+      </div>
+    </footer>
+
+    <div class="concept-badge mono">Concept preview · design proposal</div>
+
+  </body>
+</html>
