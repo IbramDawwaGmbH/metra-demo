@@ -7,8 +7,8 @@
     <meta name="robots" content="noindex, nofollow" />
     <meta name="description" content="Metra Group — the MENA region's fastest-growing IT value-added distributor since 1982. Concept preview." />
     <link rel="icon" href="/metra-demo/brand/favicon.svg" type="image/svg+xml" />
-    <script type="module" crossorigin src="/metra-demo/assets/index-R0N0AZtR.js"></script>
-    <link rel="stylesheet" crossorigin href="/metra-demo/assets/index-C7CEREIy.css">
+    <script type="module" crossorigin src="/metra-demo/assets/index-BEQicAeY.js"></script>
+    <link rel="stylesheet" crossorigin href="/metra-demo/assets/index-BUI8tahg.css">
   </head>
   <body>
     <!-- Preloader -->
@@ -59,10 +59,18 @@
             <a href="#solutions" class="btn magnetic" data-cursor="Explore"><span>Explore solutions</span></a>
           </div>
         </div>
+        <div class="hero-globe" id="heroGlobe" aria-hidden="true">
+          <div class="hero-globe__inner">
+            <span class="hero-globe__glow"></span>
+            <canvas></canvas>
+            <span class="hero-globe__limb"></span>
+          </div>
+        </div>
         <div class="hero__signal mono" aria-hidden="true">
           <span class="sig sig--in"><b>30+</b> vendors in</span>
           <span class="sig sig--mid">metra · carrier</span>
           <span class="sig sig--out"><b>6,500</b> partners out</span>
+          <span class="sig-dot"></span>
         </div>
         <div class="hero__scroll mono"><span class="hero__scroll-line"></span>Scroll to follow the signal</div>
       </section>
@@ -174,6 +182,11 @@
                 Headquartered in Dubai's Business Bay, with a strong and growing presence in the UAE, KSA and Egypt — and
                 a value chain that reaches across the Gulf, the Levant and beyond.
               </p>
+              <div class="globe-card" id="globeCard">
+                <canvas aria-label="Globe showing Metra's markets"></canvas>
+                <div class="globe-card__labels" aria-hidden="true"></div>
+                <p class="globe-card__hint mono" aria-hidden="true"><span>⟵</span> Drag to explore <span>⟶</span></p>
+              </div>
               <ul class="countries mono" id="countryList">
                 <li data-key="uae"><span>UAE</span><small>HQ · Dubai</small></li>
                 <li data-key="ksa"><span>Saudi Arabia</span><small>Since 1991</small></li>
